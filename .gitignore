@@ -1,3 +1,7 @@
+# =========================
+# Compiled C / C++ / Arduino
+# =========================
+
 # Prerequisites
 *.d
 
@@ -30,3 +34,51 @@
 *.exe
 *.out
 *.app
+
+
+# =========================
+# Python / Raspberry Pi
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments (venv / conda)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables (gevoelige data)
+.env
+.env.local
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE / Editor mappen
+.vscode/
+.idea/
