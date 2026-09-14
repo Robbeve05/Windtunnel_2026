@@ -1,8 +1,7 @@
 /* Buildable interface placeholder. Does not access pins or drive a fan. */
 #include "board_port.h"
 #include <string.h>
-#include "FreeRTOS.h"
-#include "task.h"
+#include "wt_rtos.h"
 void board_init_safe(void) { board_emergency_off(); }
 uint32_t board_millis(void) { return (uint32_t)((uint64_t)xTaskGetTickCount() * 1000u / configTICK_RATE_HZ); }
 bool board_ready(void) { return false; }

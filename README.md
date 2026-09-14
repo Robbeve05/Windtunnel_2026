@@ -19,9 +19,14 @@ geïmplementeerd; MANUAL stuurt een uitgangspercentage, geen toerentalsetpoint.
 
 ## Bestanden
 
+**Ontwikkelen in VS Code:** gebruik [PlatformIO voor Due en ESP32](docs/PLATFORMIO.md).
+Open deze repositoryroot; `platformio.ini` bevat beide buildomgevingen.
+
 | Map | Functie |
 | --- | --- |
 | `arduino/src` | Kern, protocol en FreeRTOS-taken voor beide boardopties |
+| `platformio.ini` | Build- en uploadconfiguratie voor `due` en `esp32` |
+| `arduino/platformio` | Gezamenlijk Arduino/FreeRTOS-entrypoint voor PlatformIO |
 | `arduino/include/board_port.h` | Interface voor de echte hardwaredrivers |
 | `arduino/ports` | Due- en ESP32-hardwarelagen met uitgecommentarieerde voorbeelden, startup en algemene fallback |
 | `raspberry_pi` | Seriële Python-client |

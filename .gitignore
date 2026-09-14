@@ -82,3 +82,7 @@ venv.bak/
 # IDE / Editor mappen
 .vscode/
 .idea/
+
+# PlatformIO dependencies and local build tooling
+.pio/
+.venv-pio/

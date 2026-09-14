@@ -4,8 +4,7 @@
  * geen bestaande ASF-functies. Vul ze in met de gekozen drivers en pinmapping.
  */
 #include "board_port.h"
-#include "FreeRTOS.h"
-#include "task.h"
+#include "wt_rtos.h"
 #include <string.h>
 
 /* Later toevoegen zodra de drivers bestaan:

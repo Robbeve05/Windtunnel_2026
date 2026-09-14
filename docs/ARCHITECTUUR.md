@@ -5,6 +5,8 @@
 Arduino Due **of** ESP32 + Raspberry Pi. De boardkeuze is nog open.
 De besturingstaak en communicatie zijn in C geschreven bovenop FreeRTOS.
 `arduino/` is de historische mapnaam; de kern hangt niet af van de Arduino IDE.
+De primaire ontwikkelroute is nu [PlatformIO in VS Code](PLATFORMIO.md), met
+Arduino als boardframework en dezelfde C/FreeRTOS-applicatiekern.
 
 De deltarobot in `EMPD2026-DeltaRobot` is als architectuurreferentie gelezen:
 `main.c` initialiseert hardware en scheduler, `ApplicationTasks.c` maakt taken
@@ -92,6 +94,11 @@ Breid daarna de toestand en het protocol uit voor closed-loop setpoints.
 Identificeer eerst de ventilatordynamica; neem de deltarobotgains niet over.
 
 ## Integratie op de boards
+
+**PlatformIO:** gebruik `platformio.ini` in de repositoryroot. Er zijn afzonderlijke
+omgevingen voor Due en klassieke ESP32. Deze gebruiken een Arduino-entrypoint en
+hebben Microchip Studio niet nodig. Onderstaande ASF/ESP-IDF-instructies beschrijven
+de alternatieve, eerdere integratieroutes.
 
 ESP32: er is een ESP-IDF-project in `arduino/ports/esp32`. Dit selecteert al de
 eigen `esp32/board_port.c` met uitgecommentarieerde hardware. Implementeer de

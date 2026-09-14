@@ -1,9 +1,7 @@
 #include "application_tasks.h"
 #include "board_port.h"
 #include "protocol.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
+#include "wt_rtos.h"
 #include <stdio.h>
 
 typedef struct { WtControl control; WtSample sample; } Snapshot;

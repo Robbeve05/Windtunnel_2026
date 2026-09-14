@@ -4,8 +4,7 @@
  * geen bestaande ESP-IDF-functies. Kies eerst ESP32-variant en pinmapping.
  */
 #include "board_port.h"
-#include "FreeRTOS.h"
-#include "task.h"
+#include "wt_rtos.h"
 #include <string.h>
 
 /* Later toevoegen zodra de drivers bestaan:
